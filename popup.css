@@ -1,0 +1,47 @@
+#wrapper {
+  margin: 0px 0px;
+  width: 275px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  max-height: 600px;
+}
+
+.menu-entry {
+    padding: 3px 4px 3px 8px;
+    cursor: pointer;
+}
+
+.menu-entry:hover {
+    -webkit-transition: all 0.3s ease-out;
+    background: #F2F2F2;
+}
+
+#enabled {
+    text-align: center;
+}
+
+#enabled img {
+    width: 100px;
+}
+
+.separator {
+    width: 100%;
+    border-top: 2px groove white;
+    margin: 5px -5px 5px -3px;
+}
+
+label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+input {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+}

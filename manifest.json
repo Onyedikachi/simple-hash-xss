@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "background": { "scripts": ["background.js"] },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "name": "Test",
+    "default_popup": "popup.html"
+  },
+  "name": "Simple Hash XSS",
+  "description": "This extension automates testing of a simple hash XSS payload commonly triggered by ad code, optionally collecting the results for research purposes",
+  "version": "1.0",
+  "permissions": [
+    "storage"
+  ],
+  "web_accessible_resources": [
+    "alert.mp3"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+	  "run_at": "document_start",
+      "js": ["script.js"]
+    }
+  ]
+}

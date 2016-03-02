@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="popup.css">
+        <script type="text/javascript" src="jquery.min.js"></script>
+    </head>
+    <body style="overflow:hidden;">
+        <div id="wrapper">
+          <div id="menu-items">
+            <div id="enabled" class="menu-entry">
+                <img id="icon_enabled" style="display:none" src="icon_on.png"/>
+                <img id="icon_disabled" style="display:none" src="icon_off.png"/>
+            </div>
+            <div id="separator0" class="separator" style="display: block;"></div>
+            <div class="menu-entry">
+                <label>
+                    <input id="report" type="checkbox" name="report" value="1"/>
+                    Allow Reporting
+                </label>
+            </div>
+            <div class="menu-entry">
+                <label>
+                    <input id="audio" type="checkbox" name="audio" value="1"/>
+                    Audio notification
+                </label>                
+            </div>
+        </div> <!-- wrapper -->
+        <script src="popup.js"></script>
+    </body>
+</html>
